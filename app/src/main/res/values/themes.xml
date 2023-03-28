@@ -8,9 +8,12 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/orange_100</item>
         <item name="colorSecondaryVariant">@color/orange_500</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/black_red</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="buttonStyle">@style/MyButtonStyle</item>
+        <item name="android:textViewStyle">@style/MyTextStyle</item>
+
         <!-- Customize your theme here. -->
     </style>
     <style name="Theme.App.Starting" parent="Theme.SplashScreen.IconBackground">
@@ -18,5 +21,27 @@
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
         <item name="windowSplashScreenIconBackgroundColor">@color/ic_launcher_background</item>
         <item name="postSplashScreenTheme">@style/Theme.KitchenGenius</item>
+    </style>
+
+    <style name="MyButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/button_red_rounded</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <style name="MyTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextColor">@color/hint_text_color</item>
+        <item name="boxStrokeColor">@color/stroke_color</item>
+        <item name="boxBackgroundColor">@color/background_color</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="android:textColorHint">@color/hint_text_color</item>
     </style>
 </resources>
