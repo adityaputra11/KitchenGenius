@@ -9,4 +9,7 @@
     <string name="favorite">Favorite</string>
     <string name="search_recipes">Search Recipes</string>
     <string name="what_would_you_cook_today">What Would You Cook Today?</string>
+    <string name="product_image">Product Image</string>
+    <string name="onboarding_image">Onboarding Image</string>
+    <string name="icon_kitchen_genius">Icon Kitchen Genius</string>
 </resources>
