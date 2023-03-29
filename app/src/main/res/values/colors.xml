@@ -30,4 +30,7 @@
     <color name="hint_text_color">#BDBDBD</color>
     <color name="stroke_color">#9E9E9E</color>
     <color name="background_color">#F5F5F5</color>
+    <color name="hint_text_color_dark">#EDEDED</color>
+    <color name="stroke_color_dark">#9E9E9E</color>
+    <color name="background_color_dark">#272727</color>
 </resources>

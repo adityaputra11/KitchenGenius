@@ -1,15 +1,12 @@
-package com.aditya.kitchengenius
+package com.aditya.kitchengenius.presentation.fragment.onboarding
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import com.aditya.kitchengenius.databinding.FragmentHomeBinding
+import androidx.fragment.app.Fragment
 import com.aditya.kitchengenius.databinding.FragmentOnboardingBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class OnboardingFragment : Fragment() {
@@ -26,6 +23,7 @@ class OnboardingFragment : Fragment() {
         activity.supportActionBar?.hide()
     }
 
+    //:TODO still nessesary
 //    private fun hideBottomMenu(){
 //        val activity = requireActivity() as AppCompatActivity
 //        val bottomNavigationView = activity.findViewById<BottomNavigationView>(R.id.bottomMenuNav)
@@ -35,7 +33,7 @@ class OnboardingFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentOnboardingBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -45,10 +43,10 @@ class OnboardingFragment : Fragment() {
 
 //        hideBottomMenu()
 
-        binding.getStartedButton.setOnClickListener {
-            val action = OnboardingFragmentDirections.actionOnboardingFragmentToHomeFragment()
-            it.findNavController().navigate(action)
-        }
+//        binding.getStartedButton.setOnClickListener {
+//            val action = OnboardingFragmentDirections.actionOnboardingFragmentToHomeFragment()
+//            it.findNavController().navigate(action)
+//        }
     }
 
 }

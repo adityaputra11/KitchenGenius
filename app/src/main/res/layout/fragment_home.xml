@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context=".HomeFragment">
+    tools:context=".presentation.fragment.home.HomeFragment">
 
     <TextView
         android:id="@+id/whatToCookTextView"
@@ -18,16 +18,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/text_input_layout"
+        android:id="@+id/searchInputLayout"
         style="@style/CustomTextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/search_recipes"
-        android:enabled="false"
         app:layout_constraintTop_toBottomOf="@id/whatToCookTextView">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/name_edit_text"
+            android:id="@+id/nameEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
